@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,7 +22,8 @@ body {
 
 div.todo__headerContainer {
     border: none;
-    margin-top: 40px;
+    margin: 20px 0px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -33,13 +33,27 @@ div.todo__headerContainer {
     justify-content: center;
 }
 
-.todo__form input {
+.todo__form .btn {
     height: inherit;
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
 .text {
     height: 38px;
     padding: 4px;
     border-radius: 3px;
+}
+
+.container, .todo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unfinished-todo-container, .finished-todo-container {
+    margin: 10px;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
 }

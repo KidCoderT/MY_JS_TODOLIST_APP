@@ -55,5 +55,26 @@ div.todo__headerContainer {
     flex-grow: 1;
     padding: 10px;
     text-align: center;
+    align-self: baseline;
+    border-radius: 10px 10px 20px 20px;
     background-color: rgb(230, 230, 230);
+}
+
+.TodoItem {
+    padding: 10px;
+	display: flex;
+	margin-top: 10px;
+    border-radius: 10px;
+	align-items: baseline;
+	justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.TodoItem h2 {
+	color: #404345;
+	text-align: center;
+}
+
+.TodoItem .btn-success, .TodoItem .btn-warning {
+	margin-left: 90px;
 }
